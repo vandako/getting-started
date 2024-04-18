@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+    
+
+}
+.nav-links ul li::after{
+    content:'' ;
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: red;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.hero-btn{
+    display:inline-block ;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black; 
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+.hero-btn:hover{
+    border: 1px solid red;
+    background: red;
+    
+}
+
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+ }
+.row{
+    margin-top: 5%;
+    justify-content: space-between;
+    display: flex;
+    
+
+}
+.coursecol{
+    flex-basis: 31%;
+    border-radius:10px ;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(4.webp);
+    background-size: cover;
+    background-position: center;
+}
+.coursecol:hover{
+    box-shadow: 0 0 20px 0  red;
+
+}
+.coursecol p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.coursecol h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: white;
+}
+ .campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+ }
+ .campuscol{
+    flex-basis: 32%;
+    border-radius:10px ;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+ }
+ .campuscol img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    font-size: 26px;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilitiescol{
+    flex-basis: 31%;
+    border-radius:10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilitiescol img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.facilitiescol p{
+    padding: 0;
+}
+.facilitiescol h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonialcol{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: lightcoral;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonialcol img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonialcol p{
+    padding: 0;
+}
+.testimonialcol h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonialcol .fa-solid{
+    color: gold;
+}
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(ban.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.icons .fa-brands{
+    color: black;
+    margin: 5px 5px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: red;
+}
+/*------about us page------*/
+.subbanner{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(aboutim.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.subbanner h1{
+    margin-top: 100px;
+}
+.aboutus{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutcol{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.aboutcol img{
+    width: 100%;
+}
+.aboutcol h1{
+    padding: 0;
+
+}
+.aboutcol p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.red-btn:hover{
+    color: white;
+}
+
+.blogcontent{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blogleft{
+    flex-basis: 65%;
+}
+.blogleft img{
+    width: 100%;
+}
+.blogleft h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blogleft p{
+    color: grey;
+    padding: 0;
+}
+.blogright{
+    flex-basis: 32%;
+}
+.blogright h3{
+    background: red;
+    color: white;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blogright p{
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.comment box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.commentbox h3{
+    text-align: left;
+}
+.commentform input, .commentform textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+
+}
+.commentform button{
+    margin: 10px 0;
+}

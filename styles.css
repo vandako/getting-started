@@ -1,0 +1,49 @@
+h1{color: brown;
+background-color: aqua;
+font-size: 40px;
+text-decoration: underline;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;}
+
+
+p{
+    color: red;
+text-align: right;
+line-height: 20px;
+letter-spacing: 1px;
+column-count: 3;
+column-gap: 50px;
+}
+
+p.error{
+    color: chartreuse;
+}
+
+.success{
+    color: orange;
+}
+
+p.success.feedback{
+    color: black;}
+    
+ul{
+    /*border-style: dashed;
+border-width: 5px;
+border-color: blue;*/
+border: 4px solid blue;
+}
+ 
+li{
+    list-style-type: circle ;
+    text-shadow: 2px 2px lightblue;
+}
+
+a[href="about.html"]{
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+

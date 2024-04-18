@@ -1,0 +1,64 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/76c192d958.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box" id="emailForm">
+            <h1>Sign Up</h1>
+            <p>Already have an account?<a href="login.html"> Log in</a></p>
+            <form id="emailForm">
+                <div class="input-field">
+                    
+                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                </div>
+                <button type="button" id="nextButton">Next</button>
+            </form>
+        </div>
+    
+        <div class="form-box" id="passwordForm" style="display: none;">
+            <h1>Enter Password</h1>
+            <form id="passwordForm">
+                <div class="input-field">
+                    <input type="password" id="passwordInput" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="form.js"></script>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <p>Already have an account?<a href="login.html"> Log in</a></p>
+    <form id="signupForm" >
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" style="color: red;"></span><br>
+        <button type="button" id="nextButton">Next</button>
+        </form>
+        <form id="passwordForm" style="display: none;">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+        <span id="passwordError" style="color: red;"></span><br>
+
+        
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+</body>
+<script src="form.js" defer></script>
+</html>
