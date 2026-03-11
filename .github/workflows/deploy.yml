@@ -3,7 +3,7 @@ name: Deploy HTML to Azure VM
 on: 
   push:
     branches:
-      - main
+      - my-branch
 
 jobs:
   deploy:
